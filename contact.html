@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="ocean-background"></div> <!-- Ocean background div -->
+
+  <header>
+    <h1>Contact Us</h1>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="causes.html">Major Causes</a>
+      <a href="pollution-facts.html">Pollution Facts</a>
+    </nav>
+    <button id="theme-button">Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <form id="myForm"> 
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="result"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Oceanaid. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

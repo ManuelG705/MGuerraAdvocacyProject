@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Pollution</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header class="header-container">
+        <h1 id="header1">Ocean Pollution</h1>
+        <p>Pollution in our oceans is a serious issue that needs to be addressed. It's a major problem that affects the entire world.</p>
+    </header>
+
+    <div id="buttons">
+        <button class="button">Log In</button>
+        <button class="button">Sign Up</button>
+        <button class="button">Notifications</button>
+    </div>
+
+    <nav id="main-nav">
+        <div id="lists">
+            <div id="nav1">
+                <a href="#causes">Major Causes</a>
+            </div>
+            <div id="nav2">
+                <a href="#video">Watch Video</a>
+            </div>
+            <div id="nav3">
+                <a href="#petition">Sign Petition</a>
+            </div>
+            <div id="toggle">
+                <button id="theme-button">Toggle Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="content">
+            <div class="horizontal-sections">
+                <section id="causes">
+                    <h2>Here are some of the major causes:</h2>
+                    <ul class="causes-list">
+                        <li><strong>Plastic waste:</strong> A massive amount of plastic ends up in our oceans, harming marine life and ecosystems.</li>
+                        <li><strong>Oil spills:</strong> Accidents involving oil tankers and offshore drilling platforms can release large quantities of oil into the water, causing devastating damage.</li>
+                        <li><strong>Agricultural runoff:</strong> Fertilizers and pesticides used in agriculture can run off into waterways and ultimately reach the ocean, polluting the water and harming marine life.</li>
+                        <li><strong>Sewage and industrial waste:</strong> Untreated sewage and industrial waste often end up in rivers and oceans, contaminating the water with harmful bacteria and chemicals.</li>
+                    </ul>
+                </section>
+
+                <section id="video">
+                    <h2>Watch Video</h2>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Yomf5pBN8dY?si=4t7U4Fe8xUjB02en" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </section>
+
+                <section id="petition" class="petition-section">
+                    <h2>Sign the Petition 📢</h2>
+                    <div class="petition-container">
+                        <div class="petition-form">
+                            <form id="sign-petition">
+                                <div>
+                                    <label for="petName">Name:</label>
+                                    <input id="petName" type="text" placeholder="Enter your name" required>
+                                </div>
+                                <div>
+                                    <label for="petHometown">Hometown:</label>
+                                    <input id="petHometown" type="text" placeholder="Enter your hometown" required>
+                                </div>
+                                <div>
+                                    <label for="petEmail">Email:</label>
+                                    <input id="petEmail" type="email" placeholder="Enter your email" required>
+                                </div>
+                                <button id="sign-now-button" type="button">Sign Now</button>
+                            </form>
+                        </div>
+
+                        <div id="signatories">
+                            <h4>People who have signed:</h4>
+                            <ul id="signatoriesList">
+                                <!-- Signatures will be added here -->
+                            </ul>
+                            <p id="amount">0 people have signed this petition and support this cause.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="buttons">
+            <button class="button">Log In</button>
+            <button class="button">Sign Up</button>
+            <button class="button">Notifications</button>
+        </div>
+        <div>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+            <button class="get-started" onclick="window.location.href='pollution-facts.html'">Get Started</button>
+            <a href="https://gofundme.com" class="footer-link">Donate</a>
+            <a href="https://google.com" class="footer-link">More Information</a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="thanks-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="modal-text-container">
+                <p id="thanks-modal-content">Thank you for signing the petition!</p>
+                <button id="close-modal" class="button">Close</button>
+            </div>
+            <img id="modal-image" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/happy-turtle-ar.jpg" alt="Thank You Image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
